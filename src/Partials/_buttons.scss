@@ -3,8 +3,26 @@
   border-radius: 50px;
   border: 2px solid $colorMain;
   padding: 10px 30px;
-  background-color: $colorMain;
-  color: $colorWhite;
   font-weight: 700;
   cursor: pointer;
+}
+
+.btn-brown {
+  background-color: $colorMain;
+  color: $colorWhite;
+
+  &:hover {
+    background-color: $colorAquamarine;
+    border: 2px solid $colorAquamarine;
+  }
+}
+
+.btn-light {
+  background-color: $colorWhite;
+  color: $colorMain;
+
+  &:hover {
+    color: $colorAquamarine;
+    border: 2px solid $colorAquamarine;
+  }
 }

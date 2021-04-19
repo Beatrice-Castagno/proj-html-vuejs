@@ -1,0 +1,50 @@
+#spa-experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & hr {
+    background-color:$colorMain;
+    border-width:0;
+    color: $colorMain;
+    height:1.5px;
+    line-height:0;
+    width: 8%;
+    margin: 20px 0;
+  }
+}
+
+.title-luxury-experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+
+  > h2 {
+    color: $colorTextGray;
+  }
+
+  > i {
+    transform: scaleX(-1);
+    color: $colorMain;
+  }
+}
+
+.description-luxury {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+
+  > p:first-child {
+    width: 60%;
+    color: $colorMain;
+  }
+
+   > p:last-child {
+    justify-content: center;
+    color: $colorTextGray;
+    width: 55%;
+    line-height: 25px;
+  }
+}
