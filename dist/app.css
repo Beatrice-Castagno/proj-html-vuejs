@@ -87,7 +87,7 @@
 }
 
 .font-cursive {
-  font-family: "Charm", cursive;
+  font-family: "Charmonman", cursive;
 }
 
 .header-top {
@@ -107,11 +107,14 @@
 .nav-left, .nav-right {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 25%;
+  justify-content: space-around;
+  width: 30%;
 }
-.nav-left .icon-home i, .nav-right .icon-home i {
+.nav-left .fa-home, .nav-right .fa-home {
   color: #6cd6e1;
+}
+.nav-left .fa-home:hover, .nav-right .fa-home:hover {
+  color: deepskyblue;
 }
 .nav-left i, .nav-right i {
   color: #bcafa1;
@@ -120,11 +123,13 @@
   margin: 0;
   color: #6b6a69;
 }
-
-.logo {
-  width: 50%;
+.nav-left .box-small-header p, .nav-right .box-small-header p {
+  font-weight: normal;
 }
 
+.logo {
+  width: 40%;
+}
 .hero {
   background-image: url("../src/img/hero/avada-spa-slider-image-1-new.jpg");
   height: 800px;
@@ -143,6 +148,9 @@
 .hero .text-hero > h1, .hero .text-hero h3 {
   margin: 0;
 }
+.hero .text-hero > h3 {
+  color: rgba(255, 255, 255, 0.7);
+}
 .hero .text-hero > button {
   margin-top: 30px;
 }
@@ -150,6 +158,31 @@
 .box {
   width: 60%;
   margin: 0 auto;
+}
+
+main .wave {
+  position: relative;
+  width: 100%;
+  background: #f7f4ef;
+  margin-top: 50px;
+}
+main .wave:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 70% 70%;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+}
+main .wave:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  left: 0;
 }
 
 #spa-experience {
@@ -165,6 +198,30 @@
   line-height: 0;
   width: 8%;
   margin: 20px 0;
+}
+#spa-experience .box-icons-main {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-around;
+  width: 100%;
+  height: 170px;
+}
+#spa-experience .box-icons-main i {
+  color: #bcafa1;
+}
+#spa-experience .box-icons-main .fa-sign-language {
+  transform: scaleX(-1);
+}
+#spa-experience .box-icons-main h6 {
+  margin: 25px;
+  color: #6b6a69;
+  font-weight: normal;
+}
+#spa-experience .box-icons-main .single-icon {
+  flex-direction: column;
+}
+#spa-experience .box-icons-main .single-icon:nth-child(2n) {
+  align-self: flex-end;
 }
 
 .title-luxury-experience {
@@ -188,14 +245,19 @@
   margin-bottom: 30px;
 }
 .description-luxury > p:first-child {
-  width: 60%;
+  width: 80%;
   color: #bcafa1;
 }
 .description-luxury > p:last-child {
   justify-content: center;
   color: #6b6a69;
-  width: 55%;
-  line-height: 25px;
+  width: 70%;
+  line-height: 30px;
+}
+
+#choose-treatments {
+  background-color: #f7f4ef;
+  height: 800px;
 }
 
 .btn {

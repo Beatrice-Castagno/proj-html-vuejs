@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;600;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Charmonman&display=swap" rel="stylesheet">
   <!-- /GOOGLE FONT -->
   <link rel="stylesheet" href="dist/app.css">
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
@@ -59,11 +59,10 @@
           </div>
         </nav>
         <!-- /blocco link destra -->
-
       </div>
       <div class="hero">
         <div class="text-hero box">
-          <h3 class="font-cursive font-body-5">Give yourself permission</h3>
+          <h3 class="font-cursive font-body-6">Give yourself permission</h3>
           <h1 class="font-body-15">Relax, Revive &amp; Rejuvenate</h1>
           <button class="btn btn-brown" type="button" name="button">Explore Treatments</button>
         </div>
@@ -81,12 +80,20 @@
           <p class="font-body-4 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat eu fugiat.</p>
          </div>
          <button class="btn btn-light" type="button" name="button">Our Approach</button>
-       </div>
+         <div class="box-icons-main">
+           <div class="single-icon text-center" v-for="icon in icons">
+              <a href="#"><i class="font-body-10" v-bind:class="icon.pathIcon"></i></a>
+             <h6 class="font-body-3">{{icon.text}}</h6>
+           </div>
+         </div>
+     </section>
+
+     <section id="choose-treatments">
+       <div class="wave"></div>
+
      </section>
     </main>
     <footer></footer>
-
-
-<script src="js/script.js" charset="utf-8"></script>
+ <script src="js/script.js" charset="utf-8"></script>
 </body>
 </html>
