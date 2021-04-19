@@ -1,0 +1,10 @@
+.nav-left {
+  display: flex;
+  padding: 30px;
+  height: 100px;
+
+  & .box-small-header {
+    display: flex;
+    flex-direction: column;
+  }
+}
