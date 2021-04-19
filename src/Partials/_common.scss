@@ -6,8 +6,12 @@
   text-transform: uppercase;
 }
 
-@for $i from 1 through 5 {
+@for $i from 1 through 20 {
 .font-body-#{$i} {
  font-size: 5px * $i;
  }
+}
+
+.font-cursive {
+  font-family: 'Charm', cursive;
 }

@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
   <!-- /FONT AWESOME -->
   <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
   <!-- /GOOGLE FONT -->
   <link rel="stylesheet" href="dist/app.css">
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
@@ -19,45 +23,49 @@
     <header>
       <div class="header-top box">
         <!-- blocco link sinistra -->
-        <div class="nav-left">
-          <div class="icon-home  font-body-4">
-            <i class="fas fa-home"></i>
+        <nav class="nav-left">
+          <div class="icon-home font-body-4">
+            <a href="#"><i class="fas fa-home"></i></a>
           </div>
-          <div class="box-small-header text-center text-uppercase">
+          <div class="box-small-header text-center">
             <i class="fab fa-pagelines"></i>
-            <h4>Treatments</h4>
+            <h5 class="text-uppercase">Treatments</h5>
             <p class="font-body-2">Face &amp; body</p>
           </div>
-          <div class="box-small-header text-center text-uppercase">
+          <div class="box-small-header text-center">
             <i class="fas fa-male"></i>
-            <h4>About</h4>
+            <h5 class="text-uppercase">About</h5>
             <p class="font-body-2">Our Team</p>
           </div>
-        </div>
+        </nav>
         <!-- /blocco link sinistra -->
-
-        <div class="logo">
-          <img src="src/img/logo/avada-spa-logo-retina-new-300x35.png" alt="logo-spa-avada">
+        <div class="logo text-center">
+          <a href="#"><img src="src/img/logo/avada-spa-logo-retina-new-300x35.png" alt="logo-spa-avada"></a>
         </div>
         <nav class="nav-right">
           <!-- blocco link destra -->
-          <div class="box-small-header text-center text-uppercase">
+          <div class="box-small-header text-center">
             <i class="fas fa-heart"></i>
-            <h4>Journal</h4>
+            <h5 class="text-uppercase">Journal</h5>
             <p class="font-body-2">Tips &amp; Tricks</p>
           </div>
-          <div class="box-small-header text-center text-uppercase">
+          <div class="box-small-header text-center">
             <i class="fas fa-bookmark"></i>
-            <h4>Book Now</h4>
+            <h5 class="text-uppercase">Book Now</h5>
             <p class="font-body-2">Spacial Offers</p>
+          </div>
+          <div class="plus-header">
+            <i class="fas fa-plus font-body-2"></i>
           </div>
         </nav>
         <!-- /blocco link destra -->
-        <div class="plus-header">
-          <i class="fas fa-plus font-body-2"></i>
-        </div>
-        <div class="hero">
 
+      </div>
+      <div class="hero">
+        <div class="text-hero box">
+          <h3 class="font-cursive font-body-5">Give yourself permission</h3>
+          <h1 class="font-body-15">Relax, Revive &amp; Rejuvenate</h1>
+          <button class="btn" type="button" name="button">Explore Treatments</button>
         </div>
       </div>
     </header>
