@@ -1,0 +1,13 @@
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+@for $i from 1 through 5 {
+.font-body-#{$i} {
+ font-size: 5px * $i;
+ }
+}

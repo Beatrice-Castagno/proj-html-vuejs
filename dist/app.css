@@ -1,18 +1,75 @@
-.nav-left {
-  display: flex;
-  padding: 30px;
-  height: 100px;
+.text-center {
+  text-align: center;
 }
-.nav-left .box-small-header {
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.font-body-1 {
+  font-size: 5px;
+}
+
+.font-body-2 {
+  font-size: 10px;
+}
+
+.font-body-3 {
+  font-size: 15px;
+}
+
+.font-body-4 {
+  font-size: 20px;
+}
+
+.font-body-5 {
+  font-size: 25px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0px;
+}
+.header-top .plus-header > .fa-plus {
+  color: #6b6a69;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+.nav-left i, .nav-right i {
+  color: #bcafa1;
+}
+.nav-left .icon-home, .nav-right .icon-home {
+  margin-right: 45px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+.nav-left .icon-home > .fa-home, .nav-right .icon-home > .fa-home {
+  color: #6cd6e1;
+}
+.nav-left .box-small-header, .nav-right .box-small-header {
+  margin: 0 20px;
+}
+.nav-left .box-small-header > h4, .nav-right .box-small-header > h4 {
+  padding: 6px 0;
+}
+.nav-left .box-small-header > h4, .nav-left .box-small-header p, .nav-right .box-small-header > h4, .nav-right .box-small-header p {
+  margin: 0;
+  color: #6b6a69;
+}
+
+.hero {
+  background-image: url("../src/img/hero/spa_thumbnail.jpg");
+  background-color: pink;
 }
 
 .box {
   width: 60%;
   margin: 0 auto;
-}
-
-.fa-home {
-  color: #6cd6e1;
 }
