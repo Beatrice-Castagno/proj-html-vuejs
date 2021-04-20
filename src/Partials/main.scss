@@ -134,11 +134,10 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     align-content: center;
-    // background-color: pink;
     width: 35%;
 
     & .choose-button {
-     margin-top: 10px;
+     margin-top: 20px;
     }
   }
 
@@ -154,7 +153,7 @@ main {
 
     > p {
       line-height: 30px;
-      margin: 10px 0;
+      margin: 20px 0;
     }
   }
 
@@ -203,6 +202,8 @@ main {
     }
 
     & .info-choose {
+      margin: 10px 0;
+
       > p {
         color: $colorTextGray;
         > span {
@@ -212,5 +213,120 @@ main {
     }
 
   }
+}
 
+#card-treatments {
+  & .bg-our-treatments {
+    color: $colorWhite;
+    padding: 65px;
+    background-image: url("../src/img/bg-main/ptb_cta-new.jpg");
+  }
+
+  & .container-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    & .card {
+      width: calc(100% / 4);
+      position: relative;
+       border: 1px solid $colorGreyExtraLight;
+
+     > .img-card {
+       display: flex;
+       align-items: center;
+
+       > h2 {
+         display: none;
+         position: relative;
+         z-index: 10;
+         left: -50%;
+         transform: translateX(-50%);
+         color: $colorWhite;
+       }
+
+       &:hover {
+         > h2 {
+           display: block;
+         }
+
+         &::after {
+           position: absolute;
+           content: '';
+           background-color: $colorMain;
+           top: 0;
+           right: 0;
+           left: 0;
+           height: 550px;
+           cursor: pointer;
+         }
+       }
+     }
+
+     & img {
+       height: 550px;
+       width: 100%;
+      }
+     }
+
+    & .text-card {
+      padding: 30px;
+
+      > h4 {
+        margin: 10px 0;
+        color: $colorMain;
+
+        &:hover {
+          color: $colorAquamarine;
+          cursor: pointer;
+        }
+      }
+
+      > hr {
+        border:none;
+        border-top:1px dotted $colorMain;
+        height:1px;
+        width:100%;
+        margin: 20px 0;
+      }
+
+      > p {
+        color: $colorTextGray;
+      }
+    }
+  }
+}
+
+#special-offer {
+  & .bg-cit {
+    display: flex;
+    align-items: center;
+    background-image: url("../src/img/footer/Home-quota-new.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+  }
+
+  & .bg-inside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $colorWhite;
+    width: 100%;
+    background-position: -40px;
+    background-size: cover;
+    height: 400px;
+    background-image: url("../src/img/footer/Home-quota-new.jpg");
+    background-repeat: no-repeat;
+
+    > .text-bg-inside {
+      width: 28%;
+
+      & p:last-child {
+        font-weight: 700;
+        margin: 40px 0;
+      }
+    }
+  }
 }

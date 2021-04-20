@@ -53,10 +53,50 @@ var app = new Vue ({
         }
       }
     ],
+    cardTreatments: [
+      {
+        image: "src/img/card-main/Layer-1-new-400x440.jpg",
+        name: "Hydroterapy",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        image: "src/img/card-main/Layer-2-new-400x440.jpg",
+        name: "Massage",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        image: "src/img/card-main/Layer-3-new-400x440.jpg",
+        name: "Aromatherapy",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        image: "src/img/card-main/Layer-4-new-400x440.jpg",
+        name: "Heat Therapy",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        image: "src/img/card-main/Layer-5-new-400x440.jpg",
+        name: "Skin Care",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        image: "src/img/card-main/Layer-6-new-400x440.jpg",
+        name: "Spa Days",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        image: "src/img/card-main/layer8-new-400x440.jpg",
+        name: "Beauty Treatments",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        image: "src/img/card-main/Layer-7-new-400x440.jpg",
+        name: "Residential",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+    ],
   },
   methods: {
-    // showOption: function(element) {
-    // 	element.show = !element.show;
-    // },
+
   }
 });

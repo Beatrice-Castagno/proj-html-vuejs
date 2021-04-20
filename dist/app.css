@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .text-center {
   text-align: center;
 }
@@ -287,7 +293,7 @@ main .wave:after {
   width: 35%;
 }
 #choose-treatments .content-right-choose .choose-button {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 #choose-treatments .text-right-choose-treatments > h2, #choose-treatments .text-right-choose-treatments p {
   color: #6b6a69;
@@ -298,7 +304,7 @@ main .wave:after {
 }
 #choose-treatments .text-right-choose-treatments > p {
   line-height: 30px;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 #choose-treatments .content-choose-options {
   display: flex;
@@ -337,11 +343,109 @@ main .wave:after {
   margin: 0;
   color: #bcafa1;
 }
+#choose-treatments .single-choose .info-choose {
+  margin: 10px 0;
+}
 #choose-treatments .single-choose .info-choose > p {
   color: #6b6a69;
 }
 #choose-treatments .single-choose .info-choose > p > span {
   font-weight: 700;
+}
+
+#card-treatments .bg-our-treatments {
+  color: white;
+  padding: 65px;
+  background-image: url("../src/img/bg-main/ptb_cta-new.jpg");
+}
+#card-treatments .container-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#card-treatments .container-card .card {
+  width: calc(100% / 4);
+  position: relative;
+  border: 1px solid #D7D7D7;
+}
+#card-treatments .container-card .card > .img-card {
+  display: flex;
+  align-items: center;
+}
+#card-treatments .container-card .card > .img-card > h2 {
+  display: none;
+  position: relative;
+  z-index: 10;
+  left: -50%;
+  transform: translateX(-50%);
+  color: white;
+}
+#card-treatments .container-card .card > .img-card:hover > h2 {
+  display: block;
+}
+#card-treatments .container-card .card > .img-card:hover::after {
+  position: absolute;
+  content: "";
+  background-color: #bcafa1;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 550px;
+  cursor: pointer;
+}
+#card-treatments .container-card .card img {
+  height: 550px;
+  width: 100%;
+}
+#card-treatments .container-card .text-card {
+  padding: 30px;
+}
+#card-treatments .container-card .text-card > h4 {
+  margin: 10px 0;
+  color: #bcafa1;
+}
+#card-treatments .container-card .text-card > h4:hover {
+  color: #6cd6e1;
+  cursor: pointer;
+}
+#card-treatments .container-card .text-card > hr {
+  border: none;
+  border-top: 1px dotted #bcafa1;
+  height: 1px;
+  width: 100%;
+  margin: 20px 0;
+}
+#card-treatments .container-card .text-card > p {
+  color: #6b6a69;
+}
+
+#special-offer .bg-cit {
+  display: flex;
+  align-items: center;
+  background-image: url("../src/img/footer/Home-quota-new.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+#special-offer .bg-inside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  background-position: -40px;
+  background-size: cover;
+  height: 400px;
+  background-image: url("../src/img/footer/Home-quota-new.jpg");
+  background-repeat: no-repeat;
+}
+#special-offer .bg-inside > .text-bg-inside {
+  width: 28%;
+}
+#special-offer .bg-inside > .text-bg-inside p:last-child {
+  font-weight: 700;
+  margin: 40px 0;
 }
 
 .btn {
