@@ -87,7 +87,15 @@
 }
 
 .font-cursive {
-  font-family: "Charmonman", cursive;
+  font-family: "Dancing Script", cursive;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
 }
 
 .header-top {
@@ -155,7 +163,7 @@
   margin-top: 30px;
 }
 
-.box {
+.container {
   width: 60%;
   margin: 0 auto;
 }
@@ -209,6 +217,9 @@ main .wave:after {
 #spa-experience .box-icons-main i {
   color: #bcafa1;
 }
+#spa-experience .box-icons-main i:hover {
+  color: #6cd6e1;
+}
 #spa-experience .box-icons-main .fa-sign-language {
   transform: scaleX(-1);
 }
@@ -257,7 +268,80 @@ main .wave:after {
 
 #choose-treatments {
   background-color: #f7f4ef;
-  height: 800px;
+}
+#choose-treatments .content-choose-treatments {
+  display: flex;
+  align-items: center;
+}
+#choose-treatments .card-choose-treatments > img {
+  height: 700px;
+  margin: 250px 100px;
+  border: 30px solid white;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+#choose-treatments .content-right-choose {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 35%;
+}
+#choose-treatments .content-right-choose .choose-button {
+  margin-top: 10px;
+}
+#choose-treatments .text-right-choose-treatments > h2, #choose-treatments .text-right-choose-treatments p {
+  color: #6b6a69;
+}
+#choose-treatments .text-right-choose-treatments > h2 {
+  font-weight: normal;
+  margin: 0;
+}
+#choose-treatments .text-right-choose-treatments > p {
+  line-height: 30px;
+  margin: 10px 0;
+}
+#choose-treatments .content-choose-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#choose-treatments .single-choose {
+  border: 1px solid #bcafa1;
+  background-color: white;
+  padding: 15px;
+  margin: 10px 0;
+}
+#choose-treatments .single-choose > .plus-less-choose {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+#choose-treatments .single-choose > .plus-less-choose > i {
+  margin-right: 20px;
+  cursor: pointer;
+}
+#choose-treatments .single-choose > .plus-less-choose > .fa-plus-square {
+  color: #6b6a69;
+}
+#choose-treatments .single-choose > .plus-less-choose > .fa-plus-square:hover {
+  color: #6cd6e1;
+}
+#choose-treatments .single-choose > .plus-less-choose > .fa-caret-up {
+  color: white;
+  background-color: #bcafa1;
+  padding: 1px 4px;
+  border-radius: 2px;
+  margin-bottom: 8px;
+}
+#choose-treatments .single-choose > .plus-less-choose > h5 {
+  margin: 0;
+  color: #bcafa1;
+}
+#choose-treatments .single-choose .info-choose > p {
+  color: #6b6a69;
+}
+#choose-treatments .single-choose .info-choose > p > span {
+  font-weight: 700;
 }
 
 .btn {

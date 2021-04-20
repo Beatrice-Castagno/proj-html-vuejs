@@ -12,16 +12,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;600;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Charmonman&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
   <!-- /GOOGLE FONT -->
   <link rel="stylesheet" href="dist/app.css">
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 </head>
-
 <body>
   <div id="app">
+    <!-- intestazione -->
     <header>
-      <div class="header-top box">
+      <div class="header-top container">
         <!-- blocco link sinistra -->
         <nav class="nav-left">
           <div class="icon-home font-body-4">
@@ -68,32 +68,76 @@
         </div>
       </div>
     </header>
+    <!-- /intestazione -->
+    <!-- corpo -->
     <main>
-     <section id="spa-experience" class="box">
+      <!-- sezione Luxury con icone -->
+      <section id="spa-experience" class="container">
         <div class="title-luxury-experience">
-           <h2 class="font-body-10">Luxury Spa Experience</h2>
-           <i class="fab fa-envira font-body-6"></i>
-         </div>
-         <div class="description-luxury">
-           <p class="font-cursive text-center font-body-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         <h2 class="font-body-10">Luxury Spa Experience</h2>
+         <i class="fab fa-envira font-body-6"></i>
+        </div>
+       <div class="description-luxury">
+         <p class="font-cursive text-center font-body-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
          <hr>
-          <p class="font-body-4 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat eu fugiat.</p>
-         </div>
-         <button class="btn btn-light" type="button" name="button">Our Approach</button>
-         <div class="box-icons-main">
-           <div class="single-icon text-center" v-for="icon in icons">
-              <a href="#"><i class="font-body-10" v-bind:class="icon.pathIcon"></i></a>
-             <h6 class="font-body-3">{{icon.text}}</h6>
-           </div>
-         </div>
-     </section>
-
-     <section id="choose-treatments">
+        <p class="font-body-4 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat eu fugiat.</p>
+      </div>
+       <button class="btn btn-light" type="button" name="button">Our Approach</button>
+       <!-- box icone -->
+      <div class="box-icons-main">
+        <div class="single-icon text-center" v-for="icon in icons">
+          <a href="#"><i class="font-body-10" v-bind:class="icon.pathIcon"></i></a>
+         <h6 class="font-body-3">{{icon.text}}</h6>
+        </div>
+      </div>
+     <!-- /box icone -->
+      </section>
+     <!-- /sezione Luxury con icone -->
+      <!-- sezione scegli trattamento -->
+      <section id="choose-treatments">
+       <!-- effetto onda bordo div -->
        <div class="wave"></div>
-
-     </section>
+       <!-- effetto onda bordo div -->
+        <div class="content-choose-treatments container">
+         <!-- immagine sinistra-->
+          <div class="card-choose-treatments">
+            <img src="src/img/card-main/face_and_body_treatments-new-400x581.jpg" alt="face_and_body_treatments">
+          </div>
+          <!-- /immagine sinistra-->
+          <!-- box testo e info trattamento -->
+          <div class="content-right-choose">
+            <div class="text-right-choose-treatments">
+             <h2 class="font-body-12">Face &amp; Body Treatments</h2>
+             <p class="font-body-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <!-- lista trattamenti -->
+            <div class="content-choose-options">
+              <ul>
+               <li class="single-choose" v-for="option in    chooseTreatments">
+                  <div class="plus-less-choose">
+                    <i class="fas fa-plus-square font-body-5" @click="option.show = !option.show" v-show="option.show == false"></i>
+                    <i class="fas fa-caret-up font-body-4" @click="option.show = !option.show" v-show="option.show == true"></i>
+                    <h5 class="font-cursive font-body-4">{{option.name}}</h5>
+                  </div>
+                  <div class="info-choose" v-show="option.show == true">
+                     <p><span>{{option.optionAdd.price}} {{option.optionAdd.time}}</span> - {{option.optionAdd.description}}</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- /lista trattamenti -->
+            <div class="choose-button">
+             <button class="btn btn-light text-center" type="button" name="button">Book and Appointment</button>
+            </div>
+          </div>
+         <!-- /box testo e info trattamento -->
+        </div>
+      </section>
+     <!-- /sezione scegli trattamento -->
     </main>
+    <!-- /corpo -->
     <footer></footer>
+  </div>
  <script src="js/script.js" charset="utf-8"></script>
 </body>
 </html>

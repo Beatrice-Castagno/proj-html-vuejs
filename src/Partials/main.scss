@@ -51,6 +51,9 @@ main {
 
    & i {
     color: $colorMain;
+    &:hover {
+      color: $colorAquamarine;
+    }
    }
 
    & .fa-sign-language {
@@ -111,5 +114,103 @@ main {
 
 #choose-treatments {
   background-color: $colorLightgrey;
-  height: 800px;
+
+  & .content-choose-treatments {
+    display: flex;
+    align-items: center;
+  }
+
+  & .card-choose-treatments {
+    > img {
+      height: 700px;
+      margin: 250px 100px;
+      border: 30px solid white;
+      box-shadow: 2px 2px 8px rgb(0, 0, 0, .3);
+    }
+  }
+
+  & .content-right-choose {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    // background-color: pink;
+    width: 35%;
+
+    & .choose-button {
+     margin-top: 10px;
+    }
+  }
+
+  & .text-right-choose-treatments {
+    > h2, p {
+      color: $colorTextGray;
+    }
+
+    > h2 {
+      font-weight: normal;
+      margin: 0;
+    }
+
+    > p {
+      line-height: 30px;
+      margin: 10px 0;
+    }
+  }
+
+  & .content-choose-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  & .single-choose {
+    border: 1px solid $colorMain;
+    background-color: $colorWhite;
+    padding: 15px;
+    margin: 10px 0;
+
+    > .plus-less-choose {
+      display: flex;
+      align-items: center;
+      margin-right: 15px;
+
+      > i {
+        margin-right: 20px;
+        cursor: pointer;
+      }
+
+      > .fa-plus-square {
+        color: $colorTextGray;
+
+        &:hover {
+          color: $colorAquamarine;
+        }
+      }
+
+      > .fa-caret-up {
+      color: $colorWhite;
+      background-color: $colorMain;
+      padding: 1px 4px;
+      border-radius: 2px;
+       margin-bottom: 8px;
+      }
+
+      > h5 {
+        margin: 0;
+        color: $colorMain;
+      }
+    }
+
+    & .info-choose {
+      > p {
+        color: $colorTextGray;
+        > span {
+          font-weight: 700;
+        }
+      }
+    }
+
+  }
+
 }
