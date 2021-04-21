@@ -312,4 +312,44 @@
       }
     }
   }
+
+  & .box-offer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("../src/img/bg-main/ptb_cta-new.jpg");
+    padding: 100px;
+
+    & .content-discount {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      & span {
+        margin-bottom: 5px;
+      }
+
+      & span, p {
+        color: $colorWhite;
+      }
+
+      & .text-center-offert p:first-child {
+       margin-bottom: 15px;
+      }
+
+      & .button-offer {
+        margin-left: 50px;
+      }
+    }
+
+    & .box-discount {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     border: 1px solid $colorMain;
+     height: 150px;
+     width: 150px;
+     margin-right: 60px;
+    }
+  }
 }

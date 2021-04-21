@@ -95,6 +95,12 @@ var app = new Vue ({
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       },
     ],
+    boxOffer: [
+      {
+        discount: "25%",
+        typoOffert: "Special Offer",
+      },
+    ]
   },
   methods: {
 

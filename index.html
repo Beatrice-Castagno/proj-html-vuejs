@@ -156,6 +156,7 @@
      <!-- /sezione card -->
      <!-- sezione bg citazione e special offer -->
      <section id="special-offer">
+       <!-- bg citazione -->
       <div class="bg-cit">
         <div class="bg-inside">
           <div class="text-bg-inside">
@@ -164,6 +165,26 @@
           </div>
         </div>
       </div>
+      <!-- /bg citazione -->
+      <!-- bg offerta libro -->
+      <div class="box-offer">
+        <div class="content-discount" v-for="item in boxOffer">
+          <!-- box sconto -->
+          <div class="box-discount text-center">
+            <span class="font-body-13">{{item.discount}}</span>
+            <p class="font-body-3 text-uppercase">{{item.typoOffert}}</p>
+          </div>
+          <!-- /box sconto -->
+          <div class="text-center-offert">
+            <p class="font-cursive font-body-8">Take some time. Treat yourself. You deserve it.</p>
+            <p class="font-body-4">Book a treatments this month and receive a {{item.discount}} further treatments.</p>
+          </div>
+        </div>
+        <div class="button-offer">
+         <button class="btn btn-brown" type="button" name="button">Book Now</button>
+        </div>
+      </div>
+      <!-- /bg offerta lbro -->
      </section>
      <!-- /sezione bg citazione e special offer -->
     </main>

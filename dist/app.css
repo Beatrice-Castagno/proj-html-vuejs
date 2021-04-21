@@ -424,6 +424,39 @@ ul {
   font-weight: 700;
   margin: 40px 0;
 }
+#special-offer .box-offer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url("../src/img/bg-main/ptb_cta-new.jpg");
+  padding: 100px;
+}
+#special-offer .box-offer .content-discount {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#special-offer .box-offer .content-discount span {
+  margin-bottom: 5px;
+}
+#special-offer .box-offer .content-discount span, #special-offer .box-offer .content-discount p {
+  color: white;
+}
+#special-offer .box-offer .content-discount .text-center-offert p:first-child {
+  margin-bottom: 15px;
+}
+#special-offer .box-offer .content-discount .button-offer {
+  margin-left: 50px;
+}
+#special-offer .box-offer .box-discount {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #bcafa1;
+  height: 150px;
+  width: 150px;
+  margin-right: 60px;
+}
 
 .btn {
   text-transform: uppercase;
