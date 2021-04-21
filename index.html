@@ -161,7 +161,7 @@
         <div class="bg-inside">
           <div class="text-bg-inside">
             <p class=" text-center font-body-5">"If you want to relax, watch the cloud pass by if you're laying on the grass, or sit in front of the creek; just doing nothing and having those still moments is what really rejuvenates the body..."</p>
-            <p class="text-uppercase text-center">Frieda Fridson, <span>Masseuse</span> </p>
+            <p class="text-uppercase text-center">Frieda Fridson, <span> Masseuse</span></p>
           </div>
         </div>
       </div>
@@ -189,7 +189,23 @@
      <!-- /sezione bg citazione e special offer -->
     </main>
     <!-- /corpo -->
-    <footer></footer>
+    <!-- fine pagina -->
+    <footer>
+      <div class="logo-footer">
+        <img src="src/img/logo/avada-spa-logo-retina-new-300x35.png" alt="avada-logo-small">
+      </div>
+      <div class="terms-center text-uppercase text-center">
+        <p class="font-body-3">&#169; Copyright 2020 - 2021 <span>&#124;</span> Avada theme by Themefusion <span>&#124;</span> All right reserved <span>&#124;</span> Powered by <a href="https://it.wordpress.org/">Wordpress</a></p>
+      </div>
+      <!-- lista social -->
+      <div class="social-list">
+        <ul v-for="icon in socialList">
+          <li><a href="#"><i class="font-body-4" v-bind:class="icon.socialIcon"></i></a></li>
+        </ul>
+      </div>
+      <!-- /lista social -->
+    </footer>
+    <!-- /fine pagina -->
   </div>
  <script src="js/script.js" charset="utf-8"></script>
 </body>

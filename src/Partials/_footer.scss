@@ -1,0 +1,47 @@
+footer {
+  display: flex;
+  padding: 40px;
+  justify-content: space-around;
+  align-items: center;
+
+  & .terms-center {
+    width: 45%;
+
+    > p {
+      color: $colorFooterText;
+    }
+
+    & span {
+      margin: 0 5px;
+    }
+    & a {
+      color: $colorFooterText;
+      &:hover {
+        color: $colorAquamarine;
+      }
+    }
+  }
+
+  & .social-list {
+    display: flex;
+    justify-content: space-around;
+
+    & li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 50px;
+      background-color: $colorPapirWhite;
+      margin: 0 5px;
+      border-radius: 4px;
+
+      & i {
+        color: $colorFooterText;
+        &:hover {
+          color: $colorAquamarine;
+        }
+      }
+    }
+  }
+}

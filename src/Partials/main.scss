@@ -276,6 +276,8 @@
 }
 
 #special-offer {
+  border-bottom: 10px solid $colorGreyExtraLight;
+
   & .bg-cit {
     display: flex;
     align-items: center;
@@ -309,6 +311,10 @@
       & p:last-child {
         font-weight: 700;
         margin: 40px 0;
+
+        > span {
+          font-weight: normal;
+        }
       }
     }
   }

@@ -23,6 +23,21 @@ var app = new Vue ({
         text: "Natural Beauty"
       }
     ],
+    socialList: [
+     {
+       socialIcon: "fab fa-facebook-f"
+     },
+     {
+       socialIcon: "fab fa-twitter"
+     },
+     {
+       socialIcon: "fab fa-instagram"
+     },
+     {
+        socialIcon: "fab fa-youtube"
+     }
+
+],
     showAddOption: false,
     chooseTreatments: [
       {
@@ -100,7 +115,7 @@ var app = new Vue ({
         discount: "25%",
         typoOffert: "Special Offer",
       },
-    ]
+    ],
   },
   methods: {
 
