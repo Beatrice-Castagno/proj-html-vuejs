@@ -21,7 +21,6 @@
   align-items: center;
   justify-content: space-around;
   width: 30%;
-  // background-color: pink;
 
   & .fa-home {
       color: $colorAquamarine;
@@ -31,13 +30,8 @@
       }
     }
 
-   & i {
-     color: $colorMain;
-   }
-
   & .box-small-header {
     > h5, p {
-      margin: 0;
       color: $colorTextGray;
     }
 
@@ -49,9 +43,6 @@
 
 .logo {
   width: 40%;
-  & img {
-    // height: 40px;
- }
 }
 
 .hero {
@@ -69,16 +60,13 @@
     justify-content: center;
     flex-direction: column;
 
-    > h1, h3 {
-      margin: 0;
-    }
-
     > h3 {
       color: rgba(255,255,255, 0.7);
+      margin-bottom: 10px;
     }
 
     > button {
-      margin-top: 30px;
+      margin-top: 40px;
     }
   }
 }

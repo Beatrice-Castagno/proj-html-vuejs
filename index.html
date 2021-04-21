@@ -100,7 +100,7 @@
        <!-- effetto onda bordo div -->
         <div class="content-choose-treatments container">
          <!-- immagine sinistra-->
-          <div class="card-choose-treatments">
+          <div class="img-choose-treatments">
             <img src="src/img/card-main/face_and_body_treatments-new-400x581.jpg" alt="face_and_body_treatments">
           </div>
           <!-- /immagine sinistra-->
@@ -113,11 +113,11 @@
             <!-- lista trattamenti -->
             <div class="content-choose-options">
               <ul>
-               <li class="single-choose" v-for="option in    chooseTreatments">
+               <li class="single-choose" v-for="option in chooseTreatments">
                   <div class="plus-less-choose">
                     <i class="fas fa-plus-square font-body-5" @click="option.show = !option.show" v-show="option.show == false"></i>
                     <i class="fas fa-caret-up font-body-4" @click="option.show = !option.show" v-show="option.show == true"></i>
-                    <h5 class="font-cursive font-body-4">{{option.name}}</h5>
+                    <h5 class="font-cursive font-body-5">{{option.name}}</h5>
                   </div>
                   <div class="info-choose" v-show="option.show == true">
                      <p><span>{{option.optionAdd.price}} {{option.optionAdd.time}}</span> - {{option.optionAdd.description}}</p>

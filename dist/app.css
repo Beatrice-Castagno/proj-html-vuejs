@@ -130,11 +130,7 @@ ul {
 .nav-left .fa-home:hover, .nav-right .fa-home:hover {
   color: deepskyblue;
 }
-.nav-left i, .nav-right i {
-  color: #bcafa1;
-}
 .nav-left .box-small-header > h5, .nav-left .box-small-header p, .nav-right .box-small-header > h5, .nav-right .box-small-header p {
-  margin: 0;
   color: #6b6a69;
 }
 .nav-left .box-small-header p, .nav-right .box-small-header p {
@@ -144,6 +140,7 @@ ul {
 .logo {
   width: 40%;
 }
+
 .hero {
   background-image: url("../src/img/hero/avada-spa-slider-image-1-new.jpg");
   height: 800px;
@@ -159,14 +156,12 @@ ul {
   justify-content: center;
   flex-direction: column;
 }
-.hero .text-hero > h1, .hero .text-hero h3 {
-  margin: 0;
-}
 .hero .text-hero > h3 {
   color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 10px;
 }
 .hero .text-hero > button {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .container {
@@ -174,44 +169,45 @@ ul {
   margin: 0 auto;
 }
 
-main .wave {
-  position: relative;
-  width: 100%;
-  background: #f7f4ef;
-  margin-top: 50px;
-}
-main .wave:before {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 70% 70%;
-  width: 100%;
-  height: 100px;
-  background-color: white;
-}
-main .wave:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 50px;
-  background-color: white;
-  left: 0;
-}
-
 #spa-experience {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#spa-experience .title-luxury-experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+#spa-experience .title-luxury-experience > .fa-envira {
+  margin: 25px 0;
+  transform: scaleX(-1);
 }
 #spa-experience hr {
   background-color: #bcafa1;
   border-width: 0;
   color: #bcafa1;
   height: 1.5px;
-  line-height: 0;
   width: 8%;
-  margin: 20px 0;
+  margin: 40px 0;
+}
+#spa-experience .description-luxury {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+#spa-experience .description-luxury > p:first-child {
+  width: 80%;
+  color: #bcafa1;
+}
+#spa-experience .description-luxury > p:last-child {
+  justify-content: center;
+  color: #6b6a69;
+  width: 70%;
+  line-height: 30px;
+  margin-bottom: 30px;
 }
 #spa-experience .box-icons-main {
   display: flex;
@@ -220,18 +216,11 @@ main .wave:after {
   width: 100%;
   height: 170px;
 }
-#spa-experience .box-icons-main i {
-  color: #bcafa1;
-}
-#spa-experience .box-icons-main i:hover {
-  color: #6cd6e1;
-}
 #spa-experience .box-icons-main .fa-sign-language {
   transform: scaleX(-1);
 }
 #spa-experience .box-icons-main h6 {
   margin: 25px;
-  color: #6b6a69;
   font-weight: normal;
 }
 #spa-experience .box-icons-main .single-icon {
@@ -241,122 +230,107 @@ main .wave:after {
   align-self: flex-end;
 }
 
-.title-luxury-experience {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-.title-luxury-experience > h2 {
-  color: #6b6a69;
-}
-.title-luxury-experience > i {
-  transform: scaleX(-1);
-  color: #bcafa1;
-}
-
-.description-luxury {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 30px;
-}
-.description-luxury > p:first-child {
-  width: 80%;
-  color: #bcafa1;
-}
-.description-luxury > p:last-child {
-  justify-content: center;
-  color: #6b6a69;
-  width: 70%;
-  line-height: 30px;
-}
-
 #choose-treatments {
   background-color: #f7f4ef;
 }
+#choose-treatments .wave {
+  position: relative;
+  width: 100%;
+  background: #f7f4ef;
+  margin-top: 50px;
+}
+#choose-treatments .wave:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 70% 70%;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+}
+#choose-treatments .wave:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  left: 0;
+}
 #choose-treatments .content-choose-treatments {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
-#choose-treatments .card-choose-treatments > img {
+#choose-treatments .content-choose-treatments .img-choose-treatments > img {
   height: 700px;
-  margin: 250px 100px;
+  margin: 200px 100px 100px 60px;
   border: 30px solid white;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
-#choose-treatments .content-right-choose {
+#choose-treatments .content-choose-treatments .content-right-choose {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-content: center;
+  margin-top: 85px;
+  align-self: center;
+  height: 650px;
   width: 35%;
 }
-#choose-treatments .content-right-choose .choose-button {
-  margin-top: 20px;
-}
-#choose-treatments .text-right-choose-treatments > h2, #choose-treatments .text-right-choose-treatments p {
-  color: #6b6a69;
-}
-#choose-treatments .text-right-choose-treatments > h2 {
+#choose-treatments .content-choose-treatments .content-right-choose .text-right-choose-treatments > h2 {
   font-weight: normal;
-  margin: 0;
 }
-#choose-treatments .text-right-choose-treatments > p {
+#choose-treatments .content-choose-treatments .content-right-choose .text-right-choose-treatments > p {
   line-height: 30px;
   margin: 20px 0;
 }
-#choose-treatments .content-choose-options {
+#choose-treatments .content-choose-treatments .content-right-choose .choose-button {
+  margin-top: 20px;
+}
+#choose-treatments .content-choose-treatments .content-right-choose .content-choose-options {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
-#choose-treatments .single-choose {
+#choose-treatments .content-choose-treatments .content-right-choose .content-choose-options .single-choose {
   border: 1px solid #bcafa1;
   background-color: white;
   padding: 15px;
   margin: 10px 0;
 }
-#choose-treatments .single-choose > .plus-less-choose {
+#choose-treatments .content-choose-treatments .content-right-choose .content-choose-options .single-choose > .plus-less-choose {
   display: flex;
   align-items: center;
   margin-right: 15px;
 }
-#choose-treatments .single-choose > .plus-less-choose > i {
+#choose-treatments .content-choose-treatments .content-right-choose .content-choose-options .single-choose > .plus-less-choose > i {
   margin-right: 20px;
   cursor: pointer;
 }
-#choose-treatments .single-choose > .plus-less-choose > .fa-plus-square {
+#choose-treatments .content-choose-treatments .content-right-choose .content-choose-options .single-choose > .plus-less-choose > .fa-plus-square {
   color: #6b6a69;
 }
-#choose-treatments .single-choose > .plus-less-choose > .fa-plus-square:hover {
+#choose-treatments .content-choose-treatments .content-right-choose .content-choose-options .single-choose > .plus-less-choose > .fa-plus-square:hover {
   color: #6cd6e1;
 }
-#choose-treatments .single-choose > .plus-less-choose > .fa-caret-up {
+#choose-treatments .content-choose-treatments .content-right-choose .content-choose-options .single-choose > .plus-less-choose > .fa-caret-up {
   color: white;
   background-color: #bcafa1;
   padding: 1px 4px;
   border-radius: 2px;
   margin-bottom: 8px;
 }
-#choose-treatments .single-choose > .plus-less-choose > h5 {
-  margin: 0;
-  color: #bcafa1;
-}
-#choose-treatments .single-choose .info-choose {
+#choose-treatments .content-choose-treatments .content-right-choose .content-choose-options .single-choose .info-choose {
   margin: 10px 0;
 }
-#choose-treatments .single-choose .info-choose > p {
-  color: #6b6a69;
-}
-#choose-treatments .single-choose .info-choose > p > span {
+#choose-treatments .content-choose-treatments .content-right-choose .content-choose-options .single-choose .info-choose span {
   font-weight: 700;
 }
 
 #card-treatments .bg-our-treatments {
-  color: white;
   padding: 65px;
   background-image: url("../src/img/bg-main/ptb_cta-new.jpg");
+}
+#card-treatments .bg-our-treatments > h2 {
+  color: white;
 }
 #card-treatments .container-card {
   display: flex;
@@ -402,7 +376,6 @@ main .wave:after {
 }
 #card-treatments .container-card .text-card > h4 {
   margin: 10px 0;
-  color: #bcafa1;
 }
 #card-treatments .container-card .text-card > h4:hover {
   color: #6cd6e1;
@@ -424,8 +397,9 @@ main .wave:after {
   align-items: center;
   background-image: url("../src/img/footer/Home-quota-new.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 700px;
+  background-size: 131%;
+  background-position: left bottom;
+  height: 800px;
 }
 #special-offer .bg-inside {
   display: flex;
@@ -434,14 +408,17 @@ main .wave:after {
   align-items: center;
   color: white;
   width: 100%;
-  background-position: -40px;
-  background-size: cover;
-  height: 400px;
+  background-position: 0% 58%;
+  background-size: 131%;
+  height: 310px;
   background-image: url("../src/img/footer/Home-quota-new.jpg");
   background-repeat: no-repeat;
 }
 #special-offer .bg-inside > .text-bg-inside {
   width: 28%;
+}
+#special-offer .bg-inside > .text-bg-inside > p {
+  color: white;
 }
 #special-offer .bg-inside > .text-bg-inside p:last-child {
   font-weight: 700;
@@ -473,4 +450,23 @@ main .wave:after {
 .btn-light:hover {
   color: #6cd6e1;
   border: 2px solid #6cd6e1;
+}
+
+i {
+  color: #bcafa1;
+}
+i:hover {
+  color: #6cd6e1;
+}
+
+h4, h5 {
+  color: #bcafa1;
+}
+
+h2, h6 {
+  color: #6b6a69;
+}
+
+p {
+  color: #6b6a69;
 }

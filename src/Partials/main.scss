@@ -1,4 +1,79 @@
-main {
+#spa-experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  & .title-luxury-experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+
+    > .fa-envira {
+      margin: 25px 0;
+      transform: scaleX(-1);
+    }
+  }
+
+  & hr {
+    background-color:$colorMain;
+    border-width:0;
+    color: $colorMain;
+    height:1.5px;
+    width: 8%;
+    margin: 40px 0;
+  }
+
+  & .description-luxury {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+
+    > p:first-child {
+      width: 80%;
+      color: $colorMain;
+    }
+
+     > p:last-child {
+      justify-content: center;
+      color: $colorTextGray;
+      width: 70%;
+      line-height: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  & .box-icons-main {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+    width: 100%;
+    height: 170px;
+
+   & .fa-sign-language {
+     transform: scaleX(-1);
+   }
+
+   & h6 {
+     margin: 25px;
+     font-weight: normal;
+   }
+
+   & .single-icon {
+     flex-direction: column;
+   }
+
+   & .single-icon:nth-child(2n) {
+     align-self: flex-end;
+   }
+  }
+}
+
+#choose-treatments {
+  background-color: $colorLightgrey;
+
   & .wave {
     position: relative;
     width: 100%;
@@ -25,190 +100,91 @@ main {
     background-color: $colorWhite;
     left: 0;
   }
-}
-
-#spa-experience {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  & hr {
-    background-color:$colorMain;
-    border-width:0;
-    color: $colorMain;
-    height:1.5px;
-    line-height:0;
-    width: 8%;
-    margin: 20px 0;
-  }
-
-  & .box-icons-main {
-    display: flex;
-    margin-top: 100px;
-    justify-content: space-around;
-    width: 100%;
-    height: 170px;
-
-   & i {
-    color: $colorMain;
-    &:hover {
-      color: $colorAquamarine;
-    }
-   }
-
-   & .fa-sign-language {
-     transform: scaleX(-1);
-   }
-
-   & h6 {
-     margin: 25px;
-     color: $colorTextGray;
-     font-weight: normal;
-   }
-
-   & .single-icon {
-     flex-direction: column;
-   }
-
-   & .single-icon:nth-child(2n) {
-     align-self: flex-end;
-   }
-  }
-
-}
-
-.title-luxury-experience {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width:100%;
-
-  > h2 {
-    color: $colorTextGray;
-  }
-
-  > i {
-    transform: scaleX(-1);
-    color: $colorMain;
-  }
-}
-
-.description-luxury {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 30px;
-
-  > p:first-child {
-    width: 80%;
-    color: $colorMain;
-  }
-
-   > p:last-child {
-    justify-content: center;
-    color: $colorTextGray;
-    width: 70%;
-    line-height: 30px;
-  }
-}
-
-#choose-treatments {
-  background-color: $colorLightgrey;
 
   & .content-choose-treatments {
     display: flex;
-    align-items: center;
-  }
-
-  & .card-choose-treatments {
-    > img {
-      height: 700px;
-      margin: 250px 100px;
-      border: 30px solid white;
-      box-shadow: 2px 2px 8px rgb(0, 0, 0, .3);
-    }
-  }
-
-  & .content-right-choose {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-content: center;
-    width: 35%;
-
-    & .choose-button {
-     margin-top: 20px;
-    }
-  }
-
-  & .text-right-choose-treatments {
-    > h2, p {
-      color: $colorTextGray;
-    }
-
-    > h2 {
-      font-weight: normal;
-      margin: 0;
-    }
-
-    > p {
-      line-height: 30px;
-      margin: 20px 0;
-    }
-  }
-
-  & .content-choose-options {
-    display: flex;
-    flex-direction: column;
+    // align-items: center;
     justify-content: center;
-  }
 
-  & .single-choose {
-    border: 1px solid $colorMain;
-    background-color: $colorWhite;
-    padding: 15px;
-    margin: 10px 0;
-
-    > .plus-less-choose {
-      display: flex;
-      align-items: center;
-      margin-right: 15px;
-
-      > i {
-        margin-right: 20px;
-        cursor: pointer;
-      }
-
-      > .fa-plus-square {
-        color: $colorTextGray;
-
-        &:hover {
-          color: $colorAquamarine;
-        }
-      }
-
-      > .fa-caret-up {
-      color: $colorWhite;
-      background-color: $colorMain;
-      padding: 1px 4px;
-      border-radius: 2px;
-       margin-bottom: 8px;
-      }
-
-      > h5 {
-        margin: 0;
-        color: $colorMain;
+    & .img-choose-treatments {
+      > img {
+        height: 700px;
+        margin: 200px 100px 100px 60px;
+        border: 30px solid white;
+        box-shadow: 2px 2px 8px rgb(0, 0, 0, .3);
       }
     }
 
-    & .info-choose {
-      margin: 10px 0;
+    & .content-right-choose {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin-top: 85px;
+      align-self: center;
+      height: 650px;
+      width: 35%;
 
-      > p {
-        color: $colorTextGray;
-        > span {
-          font-weight: 700;
+      & .text-right-choose-treatments {
+
+        > h2 {
+          font-weight: normal;
         }
+
+        > p {
+          line-height: 30px;
+          margin: 20px 0;
+        }
+      }
+      & .choose-button {
+       margin-top: 20px;
+      }
+
+
+      & .content-choose-options {
+        display: flex;
+        flex-direction: column;
+
+        & .single-choose {
+          border: 1px solid $colorMain;
+          background-color: $colorWhite;
+          padding: 15px;
+          margin: 10px 0;
+
+          > .plus-less-choose {
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+
+            > i {
+              margin-right: 20px;
+              cursor: pointer;
+            }
+
+            > .fa-plus-square {
+              color: $colorTextGray;
+
+              &:hover {
+                color: $colorAquamarine;
+              }
+            }
+
+            > .fa-caret-up {
+            color: $colorWhite;
+            background-color: $colorMain;
+            padding: 1px 4px;
+            border-radius: 2px;
+             margin-bottom: 8px;
+            }
+          }
+
+          & .info-choose {
+            margin: 10px 0;
+              & span {
+                font-weight: 700;
+              }
+            }
+        }
+
       }
     }
 
@@ -217,9 +193,12 @@ main {
 
 #card-treatments {
   & .bg-our-treatments {
-    color: $colorWhite;
     padding: 65px;
     background-image: url("../src/img/bg-main/ptb_cta-new.jpg");
+
+    > h2 {
+      color: $colorWhite;
+    }
   }
 
   & .container-card {
@@ -274,7 +253,6 @@ main {
 
       > h4 {
         margin: 10px 0;
-        color: $colorMain;
 
         &:hover {
           color: $colorAquamarine;
@@ -303,8 +281,9 @@ main {
     align-items: center;
     background-image: url("../src/img/footer/Home-quota-new.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 700px;
+    background-size: 131%;
+    background-position: left bottom;
+    height: 800px;
   }
 
   & .bg-inside {
@@ -314,14 +293,18 @@ main {
     align-items: center;
     color: $colorWhite;
     width: 100%;
-    background-position: -40px;
-    background-size: cover;
-    height: 400px;
+    background-position: 0% 58%;
+    background-size: 131%;
+    height: 310px;
     background-image: url("../src/img/footer/Home-quota-new.jpg");
     background-repeat: no-repeat;
 
     > .text-bg-inside {
       width: 28%;
+
+      > p {
+        color: $colorWhite;
+      }
 
       & p:last-child {
         font-weight: 700;

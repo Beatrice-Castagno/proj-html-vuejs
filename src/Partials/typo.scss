@@ -1,0 +1,19 @@
+i {
+  color: $colorMain;
+
+  &:hover {
+    color: $colorAquamarine;
+  }
+}
+
+h4, h5 {
+  color: $colorMain;
+}
+
+h2, h6 {
+  color: $colorTextGray;
+}
+
+p {
+  color: $colorTextGray;
+}
