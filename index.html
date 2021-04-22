@@ -22,44 +22,35 @@
     <!-- intestazione -->
     <header>
       <div class="header-top container">
+        <div class="icon-home font-body-4">
+          <a href="#"><i class="fas fa-home"></i></a>
+        </div>
         <!-- blocco link sinistra -->
-        <nav class="nav-left">
-          <div class="icon-home font-body-4">
-            <a href="#"><i class="fas fa-home"></i></a>
-          </div>
-          <div class="box-small-header text-center">
-            <i class="fab fa-pagelines"></i>
-            <h5 class="text-uppercase">Treatments</h5>
-            <p class="font-body-2">Face &amp; body</p>
-          </div>
-          <div class="box-small-header text-center">
-            <i class="fas fa-male"></i>
-            <h5 class="text-uppercase">About</h5>
-            <p class="font-body-2">Our Team</p>
+        <nav>
+          <div class="box-small-header text-center" v-for="element in navLeft">
+            <i v-bind:class="element.iconHeader"></i>
+            <h5 class="text-uppercase">{{element.name}}</h5>
+            <p class="font-body-2">{{element.typo}}</p>
           </div>
         </nav>
         <!-- /blocco link sinistra -->
         <div class="logo text-center">
           <a href="#"><img src="src/img/logo/avada-spa-logo-retina-new-300x35.png" alt="logo-spa-avada"></a>
         </div>
-        <nav class="nav-right">
-          <!-- blocco link destra -->
-          <div class="box-small-header text-center">
-            <i class="fas fa-heart"></i>
-            <h5 class="text-uppercase">Journal</h5>
-            <p class="font-body-2">Tips &amp; Tricks</p>
-          </div>
-          <div class="box-small-header text-center">
-            <i class="fas fa-bookmark"></i>
-            <h5 class="text-uppercase">Book Now</h5>
-            <p class="font-body-2">Spacial Offers</p>
-          </div>
-          <div class="plus-header">
-            <i class="fas fa-plus font-body-2"></i>
+        <!-- blocco link destra -->
+        <nav>
+          <div class="box-small-header text-center" v-for="element in navRight">
+            <i v-bind:class="element.iconHeader"></i>
+            <h5 class="text-uppercase">{{element.name}}</h5>
+            <p class="font-body-2">{{element.typo}}</p>
           </div>
         </nav>
         <!-- /blocco link destra -->
+        <div class="plus-header">
+         <i class="fas fa-plus font-body-3"></i>
+        </div>
       </div>
+      <!-- hero -->
       <div class="hero">
         <div class="text-hero box">
           <h3 class="font-cursive font-body-6">Give yourself permission</h3>
@@ -67,6 +58,7 @@
           <button class="btn btn-brown" type="button" name="button">Explore Treatments</button>
         </div>
       </div>
+      <!-- /hero -->
     </header>
     <!-- /intestazione -->
     <!-- corpo -->

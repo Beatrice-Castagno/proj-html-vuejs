@@ -111,38 +111,44 @@ a {
 .header-top {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 15px 0px;
+  align-content: center;
+  justify-content: space-around;
+  padding: 15px 0;
   font-family: "Martel Sans", sans-serif;
   font-weight: 700;
   width: 100%;
 }
-.header-top .plus-header > .fa-plus {
+.header-top .fa-plus {
   color: #6b6a69;
   font-weight: 700;
+  width: 5%;
+}
+.header-top .fa-plus:hover {
+  color: #66CDAA;
 }
 
-.nav-left, .nav-right {
+nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 30%;
 }
-.nav-left .fa-home, .nav-right .fa-home {
-  color: #6cd6e1;
+nav .fa-home {
+  color: #66CDAA;
+  width: 5%;
 }
-.nav-left .fa-home:hover, .nav-right .fa-home:hover {
+nav .fa-home:hover {
   color: deepskyblue;
 }
-.nav-left .box-small-header > h5, .nav-left .box-small-header p, .nav-right .box-small-header > h5, .nav-right .box-small-header p {
+nav .box-small-header > h5, nav .box-small-header p {
   color: #6b6a69;
 }
-.nav-left .box-small-header p, .nav-right .box-small-header p {
+nav .box-small-header p {
   font-weight: normal;
 }
 
 .logo {
-  width: 40%;
+  width: 30%;
 }
 
 .hero {
@@ -177,6 +183,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 50px;
+  justify-content: space-between;
 }
 #spa-experience .title-luxury-experience {
   display: flex;
@@ -185,6 +193,7 @@ a {
   width: 100%;
 }
 #spa-experience .title-luxury-experience > .fa-envira {
+  color: #bcafa1;
   margin: 25px 0;
   transform: scaleX(-1);
 }
@@ -241,13 +250,12 @@ a {
   position: relative;
   width: 100%;
   background: #f7f4ef;
-  margin-top: 50px;
 }
 #choose-treatments .wave:before {
   content: "";
   display: block;
   position: absolute;
-  border-radius: 70% 70%;
+  border-radius: 100% 100%;
   width: 100%;
   height: 100px;
   background-color: white;
@@ -313,7 +321,7 @@ a {
   color: #6b6a69;
 }
 #choose-treatments .content-choose-treatments .content-right-choose .content-choose-options .single-choose > .plus-less-choose > .fa-plus-square:hover {
-  color: #6cd6e1;
+  color: #66CDAA;
 }
 #choose-treatments .content-choose-treatments .content-right-choose .content-choose-options .single-choose > .plus-less-choose > .fa-caret-up {
   color: white;
@@ -382,7 +390,7 @@ a {
   margin: 10px 0;
 }
 #card-treatments .container-card .text-card > h4:hover {
-  color: #6cd6e1;
+  color: #66CDAA;
   cursor: pointer;
 }
 #card-treatments .container-card .text-card > hr {
@@ -482,8 +490,8 @@ a {
   color: white;
 }
 .btn-brown:hover {
-  background-color: #6cd6e1;
-  border: 2px solid #6cd6e1;
+  background-color: #66CDAA;
+  border: 2px solid #66CDAA;
 }
 
 .btn-light {
@@ -491,8 +499,8 @@ a {
   color: #bcafa1;
 }
 .btn-light:hover {
-  color: #6cd6e1;
-  border: 2px solid #6cd6e1;
+  color: #66CDAA;
+  border: 2px solid #66CDAA;
 }
 
 footer {
@@ -514,13 +522,13 @@ footer .terms-center a {
   color: #9C9C9C;
 }
 footer .terms-center a:hover {
-  color: #6cd6e1;
+  color: #66CDAA;
 }
 footer .social-list {
   display: flex;
   justify-content: space-around;
 }
-footer .social-list li {
+footer .social-list a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -530,18 +538,19 @@ footer .social-list li {
   margin: 0 5px;
   border-radius: 4px;
 }
-footer .social-list li i {
-  color: #9C9C9C;
+footer .social-list a:hover {
+  color: #f7f4ef;
 }
-footer .social-list li i:hover {
-  color: #6cd6e1;
+footer .social-list a i {
+  color: #9C9C9C;
 }
 
 i {
   color: #bcafa1;
+  cursor: pointer;
 }
 i:hover {
-  color: #6cd6e1;
+  color: #66CDAA;
 }
 
 h4, h5 {

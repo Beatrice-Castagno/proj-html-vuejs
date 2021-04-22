@@ -1,6 +1,30 @@
 var app = new Vue ({
   el: "#app",
   data: {
+    navLeft: [
+      {
+        iconHeader: "fab fa-pagelines",
+        name: "Treatments",
+        typo: "Face & body",
+      },
+      {
+        iconHeader: "fas fa-male",
+        name: "About",
+        typo: "Our Team",
+      },
+    ],
+    navRight: [
+      {
+        iconHeader: "fas fa-heart",
+        name: "Journal",
+        typo: "Tips & Tricks",
+      },
+      {
+        iconHeader: "fas fa-bookmark",
+        name: "Book Now",
+        typo: "Spacial Offers",
+      },
+    ],
     icons: [
       {
         pathIcon: "fas fa-sign-language",
