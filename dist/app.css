@@ -113,10 +113,18 @@ a {
   align-items: center;
   align-content: center;
   justify-content: space-around;
-  padding: 15px 0;
+  padding-top: 18px;
+  padding-bottom: 12px;
   font-family: "Martel Sans", sans-serif;
   font-weight: 700;
   width: 100%;
+}
+.header-top .fa-home {
+  color: #66CDAA;
+  width: 5%;
+}
+.header-top .fa-home:hover {
+  color: #6cd6e1;
 }
 .header-top .fa-plus {
   color: #6b6a69;
@@ -133,12 +141,24 @@ nav {
   justify-content: space-evenly;
   width: 30%;
 }
-nav .fa-home {
-  color: #66CDAA;
-  width: 5%;
+nav .box-small-header {
+  cursor: pointer;
 }
-nav .fa-home:hover {
-  color: deepskyblue;
+nav .box-small-header:hover > i {
+  color: #66CDAA;
+}
+nav .box-small-header:after {
+  content: "";
+  display: block;
+  margin: 2px auto;
+  height: 2px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+nav .box-small-header:hover:after {
+  width: 40%;
+  background-color: #66CDAA;
 }
 nav .box-small-header > h5, nav .box-small-header p {
   color: #6b6a69;
@@ -315,7 +335,6 @@ nav .box-small-header p {
 }
 #choose-treatments .content-choose-treatments .content-right-choose .content-choose-options .single-choose > .plus-less-choose > i {
   margin-right: 20px;
-  cursor: pointer;
 }
 #choose-treatments .content-choose-treatments .content-right-choose .content-choose-options .single-choose > .plus-less-choose > .fa-plus-square {
   color: #6b6a69;
@@ -324,11 +343,18 @@ nav .box-small-header p {
   color: #66CDAA;
 }
 #choose-treatments .content-choose-treatments .content-right-choose .content-choose-options .single-choose > .plus-less-choose > .fa-caret-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
   background-color: #bcafa1;
-  padding: 1px 4px;
-  border-radius: 2px;
+  height: 23px;
+  width: 23px;
+  border-radius: 3px;
   margin-bottom: 8px;
+}
+#choose-treatments .content-choose-treatments .content-right-choose .content-choose-options .single-choose > .plus-less-choose > .fa-caret-up:hover {
+  background-color: #66CDAA;
 }
 #choose-treatments .content-choose-treatments .content-right-choose .content-choose-options .single-choose .info-choose {
   margin: 10px 0;
@@ -528,21 +554,24 @@ footer .social-list {
   display: flex;
   justify-content: space-around;
 }
-footer .social-list a {
+footer .social-list li {
+  background-color: #F6F6F6;
+  margin: 0 5px;
+  border-radius: 4px;
+}
+footer .social-list li:hover {
+  background-color: #f7f4ef;
+}
+footer .social-list li i {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
   width: 50px;
-  background-color: #F6F6F6;
-  margin: 0 5px;
-  border-radius: 4px;
-}
-footer .social-list a:hover {
-  color: #f7f4ef;
-}
-footer .social-list a i {
   color: #9C9C9C;
+}
+footer .social-list li i:hover {
+  color: #66CDAA;
 }
 
 i {

@@ -26,25 +26,26 @@ footer {
     display: flex;
     justify-content: space-around;
 
-    & a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 50px;
-      width: 50px;
+    & li {
       background-color: $colorPapirWhite;
       margin: 0 5px;
       border-radius: 4px;
 
       &:hover {
-        color: $colorLightgrey;
+        background-color: $colorLightgrey;
       }
 
       & i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 50px;
         color: $colorFooterText;
-        // &:hover {
-        //   color: $colorAquamarine;
-        // }
+
+        &:hover {
+          color: $colorAquamarine;
+        }
       }
     }
   }

@@ -105,7 +105,6 @@
 
   & .content-choose-treatments {
     display: flex;
-    // align-items: center;
     justify-content: center;
 
     & .img-choose-treatments {
@@ -159,7 +158,6 @@
 
             > i {
               margin-right: 20px;
-              cursor: pointer;
             }
 
             > .fa-plus-square {
@@ -171,12 +169,20 @@
             }
 
             > .fa-caret-up {
-            color: $colorWhite;
-            background-color: $colorMain;
-            padding: 1px 4px;
-            border-radius: 2px;
-             margin-bottom: 8px;
-            }
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: $colorWhite;
+              background-color: $colorMain;
+              height: 23px;
+              width: 23px;
+              border-radius: 3px;
+              margin-bottom: 8px;
+
+              &:hover {
+                background-color: $colorAquamarine;
+              }
+           }
           }
 
           & .info-choose {

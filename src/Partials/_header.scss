@@ -3,11 +3,20 @@
   align-items: center;
   align-content: center;
   justify-content: space-around;
-  padding: 15px 0;
+  padding-top: 18px;
+  padding-bottom: 12px;
   font-family: 'Martel Sans', sans-serif;
   font-weight: 700;
   width: 100%;
 
+  & .fa-home {
+    color: $colorAquamarine;
+    width: 5%;
+
+    &:hover {
+      color: $colorHoverOld;
+    }
+  }
  & .fa-plus {
     color: $colorTextGray;
     font-weight: 700;
@@ -25,16 +34,29 @@
   justify-content: space-evenly;
   width: 30%;
 
-  & .fa-home {
-      color: $colorAquamarine;
-      width: 5%;
+  & .box-small-header {
+    cursor: pointer;
 
-      &:hover {
-        color: deepskyblue;
+    &:hover {
+      > i {
+        color: $colorAquamarine;
       }
     }
 
-  & .box-small-header {
+     &:after {
+       content: '';
+       display: block;
+       margin: 2px auto;
+       height: 2px;
+       width: 0px;
+       background: transparent;
+       transition: width 0.5s ease, background-color 0.5s ease;
+     }
+     &:hover:after {
+       width: 40%;
+       background-color: $colorAquamarine;
+      }
+
     > h5, p {
       color: $colorTextGray;
     }
