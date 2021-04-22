@@ -32,7 +32,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     > p:first-child {
       width: 80%;
@@ -109,8 +109,8 @@
 
     & .img-choose-treatments {
       > img {
-        height: 700px;
-        margin: 200px 100px 100px 60px;
+        height: 800px;
+        margin: 250px 100px 150px 60px;
         border: 30px solid white;
         box-shadow: 2px 2px 8px rgb(0, 0, 0, .3);
       }
@@ -120,7 +120,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      margin-top: 85px;
+      margin-top: 75px;
       align-self: center;
       height: 650px;
       width: 35%;
@@ -128,18 +128,17 @@
       & .text-right-choose-treatments {
 
         > h2 {
-          font-weight: normal;
+          font-weight: 700;
         }
 
         > p {
           line-height: 30px;
-          margin: 20px 0;
+          margin: 30px 0;
         }
       }
       & .choose-button {
-       margin-top: 20px;
+       margin-top: 40px;
       }
-
 
       & .content-choose-options {
         display: flex;
@@ -183,17 +182,16 @@
               &:hover {
                 background-color: $colorAquamarine;
               }
-           }
+            }
           }
 
           & .info-choose {
-            margin: 10px 0;
-              & span {
-                font-weight: 700;
-              }
+           margin: 8px 0;
+            & span {
+              font-weight: 700;
             }
+          }
         }
-
       }
     }
 
@@ -202,7 +200,8 @@
 
 #card-treatments {
   & .bg-our-treatments {
-    padding: 65px;
+    padding: 80px;
+    background-position: 0% 50%;
     background-image: url("../src/img/bg-main/ptb_cta-new.jpg");
 
     > h2 {
@@ -218,7 +217,7 @@
     & .card {
       width: calc(100% / 4);
       position: relative;
-       border: 1px solid $colorGreyExtraLight;
+      border: 1.5px solid $colorGreyExtraLight;
 
      > .img-card {
        display: flex;
@@ -258,31 +257,28 @@
      }
 
     & .text-card {
-      padding: 30px;
-
-      > h4 {
-        margin: 10px 0;
+      padding: 20px;
 
         &:hover {
           color: $colorAquamarine;
           cursor: pointer;
         }
-      }
 
-      > hr {
-        border:none;
-        border-top:1px dotted $colorMain;
-        height:1px;
-        width:100%;
-        margin: 20px 0;
-      }
+        > hr {
+          border:none;
+          border-top: 1.5px dotted $colorMain;
+          height:1px;
+          width:100%;
+          margin: 20px 0;
+        }
 
-      > p {
-        color: $colorTextGray;
+        > p {
+          padding: 5px;
+          color: $colorTextGray;
+        }
       }
     }
   }
-}
 
 #special-offer {
   border-bottom: 10px solid $colorGreyExtraLight;
@@ -314,8 +310,8 @@
       > .text-bg-inside {
         width: 28%;
 
-
         > p {
+          font-weight: 700;
           color: $colorWhite;
         }
 
@@ -330,20 +326,20 @@
       }
     }
 
-    & .bg-bottom  {
+    & .bg-bottom {
       background-image: url("../src/img/footer/Home-quota-new.jpg");
       background-repeat: no-repeat;
-      background-position: 1.5% 100%;
+      background-position: 1.6% 100%;
       background-size: 130%;
       height: 200px;
     }
   }
 
-
   & .box-offer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    background-position: 0% 20%;
     background-image: url("../src/img/bg-main/ptb_cta-new.jpg");
     padding: 100px;
 
@@ -373,9 +369,10 @@
      display: flex;
      flex-direction: column;
      justify-content: center;
+     align-content: center;
      border: 1px solid $colorMain;
-     height: 150px;
-     width: 150px;
+     height: 170px;
+     width: 190px;
      margin-right: 60px;
     }
   }

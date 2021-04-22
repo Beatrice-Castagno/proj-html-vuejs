@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Home - Avada Spa</title>
+  <link rel="shortcut icon" href="src/img/favicon.ico" />
   <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
   <!-- /FONT AWESOME -->
@@ -13,6 +14,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;600;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
   <!-- /GOOGLE FONT -->
   <link rel="stylesheet" href="dist/app.css">
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
@@ -53,8 +58,8 @@
       <!-- hero -->
       <div class="hero">
         <div class="text-hero box">
-          <h3 class="font-cursive font-body-6">Give yourself permission</h3>
-          <h1 class="font-body-15">Relax, Revive &amp; Rejuvenate</h1>
+          <h3 class="font-cursive-2 font-body-6">Give yourself permission</h3>
+          <h1 class="font-body-14">Relax, Revive &amp; Rejuvenate</h1>
           <button class="btn btn-brown" type="button" name="button">Explore Treatments</button>
         </div>
       </div>
@@ -99,8 +104,8 @@
           <!-- box testo e info trattamento -->
           <div class="content-right-choose">
             <div class="text-right-choose-treatments">
-             <h2 class="font-body-12">Face &amp; Body Treatments</h2>
-             <p class="font-body-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+             <h2 class="font-body-11">Face &amp; Body Treatments</h2>
+             <p class="font-body-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
             </div>
             <!-- lista trattamenti -->
             <div class="content-choose-options">
@@ -111,7 +116,7 @@
                     <i class="fas fa-caret-up font-body-4" @click="option.show = !option.show" v-show="option.show == true"></i>
                     <h5 class="font-cursive font-body-5">{{option.name}}</h5>
                   </div>
-                  <div class="info-choose" v-show="option.show == true">
+                  <div class="info-choose font-body-3" v-show="option.show == true">
                      <p><span>{{option.optionAdd.price}} {{option.optionAdd.time}}</span> - {{option.optionAdd.description}}</p>
                   </div>
                 </li>
@@ -153,14 +158,12 @@
          <div class="bg-top"></div>
            <div class="bg-inside">
              <div class="text-bg-inside">
-               <p class=" text-center font-body-5">"If you want to relax, watch the cloud pass by if you're laying on the grass, or sit in front of the creek; just doing nothing and having those still moments is what really rejuvenates the body..."</p>
+               <p class=" text-center font-body-5 font-cursive-2">"If you want to relax, watch the cloud pass by if you're laying on the grass, or sit in front of the creek; just doing nothing and having those still moments is what really rejuvenates the body..."</p>
                <p class="text-uppercase text-center">Frieda Fridson, <span> Masseuse</span></p>
              </div>
-
          </div>
          <div class="bg-bottom"></div>
        </div>
-
       <!-- /bg citazione -->
       <!-- bg offerta libro -->
       <div class="box-offer">
@@ -172,7 +175,7 @@
           </div>
           <!-- /box sconto -->
           <div class="text-center-offert">
-            <p class="font-cursive font-body-8">Take some time. Treat yourself. You deserve it.</p>
+            <p class="font-cursive-2 font-body-8">Take some time. Treat yourself. You deserve it.</p>
             <p class="font-body-4">Book a treatments this month and receive a {{item.discount}} further treatments.</p>
           </div>
         </div>

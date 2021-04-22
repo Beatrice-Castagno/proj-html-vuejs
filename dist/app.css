@@ -92,8 +92,20 @@
   font-size: 100px;
 }
 
+header {
+  font-family: "Martel Sans", sans-serif;
+}
+
+main {
+  font-family: "Shippori Mincho B1", serif;
+}
+
 .font-cursive {
   font-family: "Dancing Script", cursive;
+}
+
+.font-cursive-2 {
+  font-family: "Charm", cursive;
 }
 
 li {
@@ -115,7 +127,6 @@ a {
   justify-content: space-around;
   padding-top: 18px;
   padding-bottom: 12px;
-  font-family: "Martel Sans", sans-serif;
   font-weight: 700;
   width: 100%;
 }
@@ -179,6 +190,7 @@ nav .box-small-header p {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  font-family: "Shippori Mincho B1", serif;
 }
 .hero .text-hero {
   display: flex;
@@ -189,10 +201,10 @@ nav .box-small-header p {
 }
 .hero .text-hero > h3 {
   color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .hero .text-hero > button {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .container {
@@ -230,7 +242,7 @@ nav .box-small-header p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 #spa-experience .description-luxury > p:first-child {
   width: 80%;
@@ -295,8 +307,8 @@ nav .box-small-header p {
   justify-content: center;
 }
 #choose-treatments .content-choose-treatments .img-choose-treatments > img {
-  height: 700px;
-  margin: 200px 100px 100px 60px;
+  height: 800px;
+  margin: 250px 100px 150px 60px;
   border: 30px solid white;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
@@ -304,20 +316,20 @@ nav .box-small-header p {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-top: 85px;
+  margin-top: 75px;
   align-self: center;
   height: 650px;
   width: 35%;
 }
 #choose-treatments .content-choose-treatments .content-right-choose .text-right-choose-treatments > h2 {
-  font-weight: normal;
+  font-weight: 700;
 }
 #choose-treatments .content-choose-treatments .content-right-choose .text-right-choose-treatments > p {
   line-height: 30px;
-  margin: 20px 0;
+  margin: 30px 0;
 }
 #choose-treatments .content-choose-treatments .content-right-choose .choose-button {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 #choose-treatments .content-choose-treatments .content-right-choose .content-choose-options {
   display: flex;
@@ -359,14 +371,15 @@ nav .box-small-header p {
   background-color: #66CDAA;
 }
 #choose-treatments .content-choose-treatments .content-right-choose .content-choose-options .single-choose .info-choose {
-  margin: 10px 0;
+  margin: 8px 0;
 }
 #choose-treatments .content-choose-treatments .content-right-choose .content-choose-options .single-choose .info-choose span {
   font-weight: 700;
 }
 
 #card-treatments .bg-our-treatments {
-  padding: 65px;
+  padding: 80px;
+  background-position: 0% 50%;
   background-image: url("../src/img/bg-main/ptb_cta-new.jpg");
 }
 #card-treatments .bg-our-treatments > h2 {
@@ -380,7 +393,7 @@ nav .box-small-header p {
 #card-treatments .container-card .card {
   width: calc(100% / 4);
   position: relative;
-  border: 1px solid #D7D7D7;
+  border: 1.5px solid #D7D7D7;
 }
 #card-treatments .container-card .card > .img-card {
   display: flex;
@@ -412,23 +425,21 @@ nav .box-small-header p {
   width: 100%;
 }
 #card-treatments .container-card .text-card {
-  padding: 30px;
+  padding: 20px;
 }
-#card-treatments .container-card .text-card > h4 {
-  margin: 10px 0;
-}
-#card-treatments .container-card .text-card > h4:hover {
+#card-treatments .container-card .text-card:hover {
   color: #66CDAA;
   cursor: pointer;
 }
 #card-treatments .container-card .text-card > hr {
   border: none;
-  border-top: 1px dotted #bcafa1;
+  border-top: 1.5px dotted #bcafa1;
   height: 1px;
   width: 100%;
   margin: 20px 0;
 }
 #card-treatments .container-card .text-card > p {
+  padding: 5px;
   color: #6b6a69;
 }
 
@@ -462,6 +473,7 @@ nav .box-small-header p {
   width: 28%;
 }
 #special-offer .all-bg .bg-inside > .text-bg-inside > p {
+  font-weight: 700;
   color: white;
 }
 #special-offer .all-bg .bg-inside > .text-bg-inside p:last-child {
@@ -474,7 +486,7 @@ nav .box-small-header p {
 #special-offer .all-bg .bg-bottom {
   background-image: url("../src/img/footer/Home-quota-new.jpg");
   background-repeat: no-repeat;
-  background-position: 1.5% 100%;
+  background-position: 1.6% 100%;
   background-size: 130%;
   height: 200px;
 }
@@ -482,6 +494,7 @@ nav .box-small-header p {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  background-position: 0% 20%;
   background-image: url("../src/img/bg-main/ptb_cta-new.jpg");
   padding: 100px;
 }
@@ -506,9 +519,10 @@ nav .box-small-header p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: center;
   border: 1px solid #bcafa1;
-  height: 150px;
-  width: 150px;
+  height: 170px;
+  width: 190px;
   margin-right: 60px;
 }
 
