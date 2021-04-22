@@ -157,6 +157,7 @@
             margin-right: 15px;
 
             > i {
+              cursor: pointer;
               margin-right: 20px;
             }
 
@@ -286,46 +287,58 @@
 #special-offer {
   border-bottom: 10px solid $colorGreyExtraLight;
 
-  & .bg-cit {
-    display: flex;
-    align-items: center;
-    background-image: url("../src/img/footer/Home-quota-new.jpg");
-    background-repeat: no-repeat;
-    background-size: 131%;
-    background-position: left bottom;
+  & .all-bg {
     height: 800px;
-  }
 
-  & .bg-inside {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: $colorWhite;
-    width: 100%;
-    background-position: 0% 58%;
-    background-size: 131%;
-    height: 310px;
-    background-image: url("../src/img/footer/Home-quota-new.jpg");
-    background-repeat: no-repeat;
+    & .bg-top {
+      background-image: url("../src/img/footer/Home-quota-new.jpg");
+      background-repeat: no-repeat;
+      background-size: 130%;
+      background-position: 1% 0%;
+      height: 200px;
+    }
 
-    > .text-bg-inside {
-      width: 28%;
+    & .bg-inside {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: $colorWhite;
+      width: 100%;
+      background-position: 1% 51%;
+      background-size: 130%;
+      height: 400px;
+      background-image: url("../src/img/footer/Home-quota-new.jpg");
+      background-repeat: no-repeat;
 
-      > p {
-        color: $colorWhite;
-      }
+      > .text-bg-inside {
+        width: 28%;
 
-      & p:last-child {
-        font-weight: 700;
-        margin: 40px 0;
 
-        > span {
-          font-weight: normal;
+        > p {
+          color: $colorWhite;
+        }
+
+        & p:last-child {
+          font-weight: 700;
+          margin: 40px 0;
+
+          > span {
+            font-weight: normal;
+          }
         }
       }
     }
+
+    & .bg-bottom  {
+      background-image: url("../src/img/footer/Home-quota-new.jpg");
+      background-repeat: no-repeat;
+      background-position: 1.5% 100%;
+      background-size: 130%;
+      height: 200px;
+    }
   }
+
 
   & .box-offer {
     display: flex;

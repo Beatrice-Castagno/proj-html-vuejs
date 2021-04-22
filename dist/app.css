@@ -130,6 +130,7 @@ a {
   color: #6b6a69;
   font-weight: 700;
   width: 5%;
+  cursor: pointer;
 }
 .header-top .fa-plus:hover {
   color: #66CDAA;
@@ -334,6 +335,7 @@ nav .box-small-header p {
   margin-right: 15px;
 }
 #choose-treatments .content-choose-treatments .content-right-choose .content-choose-options .single-choose > .plus-less-choose > i {
+  cursor: pointer;
   margin-right: 20px;
 }
 #choose-treatments .content-choose-treatments .content-right-choose .content-choose-options .single-choose > .plus-less-choose > .fa-plus-square {
@@ -433,40 +435,48 @@ nav .box-small-header p {
 #special-offer {
   border-bottom: 10px solid #D7D7D7;
 }
-#special-offer .bg-cit {
-  display: flex;
-  align-items: center;
-  background-image: url("../src/img/footer/Home-quota-new.jpg");
-  background-repeat: no-repeat;
-  background-size: 131%;
-  background-position: left bottom;
+#special-offer .all-bg {
   height: 800px;
 }
-#special-offer .bg-inside {
+#special-offer .all-bg .bg-top {
+  background-image: url("../src/img/footer/Home-quota-new.jpg");
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position: 1% 0%;
+  height: 200px;
+}
+#special-offer .all-bg .bg-inside {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
   width: 100%;
-  background-position: 0% 58%;
-  background-size: 131%;
-  height: 310px;
+  background-position: 1% 51%;
+  background-size: 130%;
+  height: 400px;
   background-image: url("../src/img/footer/Home-quota-new.jpg");
   background-repeat: no-repeat;
 }
-#special-offer .bg-inside > .text-bg-inside {
+#special-offer .all-bg .bg-inside > .text-bg-inside {
   width: 28%;
 }
-#special-offer .bg-inside > .text-bg-inside > p {
+#special-offer .all-bg .bg-inside > .text-bg-inside > p {
   color: white;
 }
-#special-offer .bg-inside > .text-bg-inside p:last-child {
+#special-offer .all-bg .bg-inside > .text-bg-inside p:last-child {
   font-weight: 700;
   margin: 40px 0;
 }
-#special-offer .bg-inside > .text-bg-inside p:last-child > span {
+#special-offer .all-bg .bg-inside > .text-bg-inside p:last-child > span {
   font-weight: normal;
+}
+#special-offer .all-bg .bg-bottom {
+  background-image: url("../src/img/footer/Home-quota-new.jpg");
+  background-repeat: no-repeat;
+  background-position: 1.5% 100%;
+  background-size: 130%;
+  height: 200px;
 }
 #special-offer .box-offer {
   display: flex;
@@ -576,7 +586,6 @@ footer .social-list li i:hover {
 
 i {
   color: #bcafa1;
-  cursor: pointer;
 }
 i:hover {
   color: #66CDAA;
