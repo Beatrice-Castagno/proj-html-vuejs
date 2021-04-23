@@ -313,6 +313,10 @@
         > p {
           font-weight: 700;
           color: $colorWhite;
+
+          > .quotation {
+            margin: 0 15px;
+          }
         }
 
         & p:last-child {

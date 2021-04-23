@@ -476,6 +476,9 @@ nav .box-small-header p {
   font-weight: 700;
   color: white;
 }
+#special-offer .all-bg .bg-inside > .text-bg-inside > p > .quotation {
+  margin: 0 15px;
+}
 #special-offer .all-bg .bg-inside > .text-bg-inside p:last-child {
   font-weight: 700;
   margin: 40px 0;
